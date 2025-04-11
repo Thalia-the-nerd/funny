@@ -60,3 +60,38 @@ Follow these steps to bypass a firewall using a VPN:
    - Launch the OpenConnect GUI application.
    - Follow the application's instructions to connect to your VPN and bypass the firewall.
 
+
+# Download YouTube Videos Using yt-dlp
+
+This guide provides a script to download YouTube videos using `yt-dlp`. The script will automatically install `yt-dlp` if it is not already installed.
+
+## Instructions
+
+1. **Run the Script**
+
+   Copy and paste the following command into your terminal:
+   ```bash
+   command -v yt-dlp >/dev/null 2>&1 || { echo "yt-dlp not found. Installing..."; curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o yt-dlp && chmod +x yt-dlp && mv yt-dlp ~/bin/; } && read -p "Enter the YouTube video URL: " video_url && yt-dlp "$video_url"
+   ```
+
+2. **What the Script Does**
+   - Checks if `yt-dlp` is installed.
+   - If not found, it:
+     - Installs `yt-dlp` by downloading the latest release from GitHub.
+     - Makes the downloaded file executable.
+     - Moves the file to the `~/bin/` directory.
+   - Prompts you to input a YouTube video URL.
+   - Downloads the video using `yt-dlp`.
+
+3. **Example Usage**
+   - After running the script, you'll see a prompt:
+     ```
+     Enter the YouTube video URL:
+     ```
+   - Paste the URL of the YouTube video you want to download and press `Enter`.
+
+4. **Dependencies**
+   - Ensure that `curl` is installed on your system.
+   - Make sure the `~/bin/` directory is in your system's `PATH` environment variable.
+
+Enjoy downloading your videos!
