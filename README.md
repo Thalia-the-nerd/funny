@@ -40,3 +40,23 @@ Follow these steps to install an application from a `.dmg` file:
 7. **Complete the Installation**
    Follow the application's installation instructions from the mounted directory.
 
+# Bypassing Firewall with VPN
+
+Follow these steps to bypass a firewall using a VPN:
+
+1. **Install Homebrew**
+   Run the following command to install Homebrew (make sure to skip using `sudo`):
+   ```bash
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" --skip-sudo
+   ```
+
+2. **Install OpenConnect GUI**
+   Use Homebrew to install the OpenConnect GUI:
+   ```bash
+   brew install --cask openconnect-gui
+   ```
+
+3. **Configure and Use the VPN**
+   - Launch the OpenConnect GUI application.
+   - Follow the application's instructions to connect to your VPN and bypass the firewall.
+
