@@ -61,6 +61,8 @@ Follow these steps to bypass a firewall using a VPN:
    - Follow the application's instructions to connect to your VPN and bypass the firewall.
 
 
+***(roblox + discord type applications use both previous commands)
+
 # Download YouTube Videos Using yt-dlp
 
 This guide provides a script to download YouTube videos using `yt-dlp`. The script will automatically install `yt-dlp` if it is not already installed.
