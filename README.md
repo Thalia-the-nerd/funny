@@ -1,6 +1,25 @@
 # funny
 funny
-
+#
+#
+#
+##
+#
+#
+#5 dollars
+#
+#
+#
+#
+#
+#
+##
+#
+#
+#
+#
+#
+#
 # How to Install Any Application
 
 Follow these steps to install an application from a `.dmg` file:
