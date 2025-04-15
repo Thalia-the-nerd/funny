@@ -1,5 +1,6 @@
 # funny
 funny
+###### important EDUCATIONAL ONLY!!!!!! DO NOT DO BAD STUFF follow the rules
 #
 #
 #
