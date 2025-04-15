@@ -51,13 +51,13 @@ Follow these steps to install an application from a `.dmg` file:
    mount -t hfs -o rdonly /dev/disk4s1 ~/mnt
    ```
 
-6. **Access the Contents**
+7. **Access the Contents**
    Open the mounted directory to access the application files:
    ```bash
    open ~/mnt
    ```
 
-7. **Complete the Installation**
+8. **Complete the Installation**
    Follow the application's installation instructions from the mounted directory.
 
 # Bypassing Firewall with VPN
