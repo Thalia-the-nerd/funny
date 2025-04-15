@@ -1,6 +1,6 @@
 # funny
 funny
-###### important EDUCATIONAL ONLY!!!!!! DO NOT DO BAD STUFF follow the rules i do not take any responibility for action done wioth this code my only goal is to educate and with that please be responsiable with the code provided my goal is not to assist in the bypassing of security restrictions DONT DO BAD THINGS KIDS
+# important EDUCATIONAL ONLY!!!!!! DO NOT DO BAD STUFF follow the rules i do not take any responibility for action done wioth this code my only goal is to educate and with that please be responsiable with the code provided my goal is not to assist in the bypassing of security restrictions DONT DO BAD THINGS KIDS
 #
 #
 #
