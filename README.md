@@ -208,4 +208,8 @@ brew doctor
 - These instructions are specifically for users without sudo access
 - The installations are performed in user space
 - Both methods should work, but SDKMAN is generally more reliable for Java installation
-- Make sure to restart your terminal after making PATH changes 
+- Make sure to restart your terminal after making PATH changes
+
+
+## installing python without sudo access
+just install like VSC or smth or use homebrew
