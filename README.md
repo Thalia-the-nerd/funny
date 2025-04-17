@@ -66,11 +66,7 @@ Follow these steps to install an application from a `.dmg` file:
 
 Follow these steps to bypass a firewall using a VPN:
 
-1. **Install Homebrew**
-   Run the following command to install Homebrew (make sure to skip using `sudo`):
-   ```bash
-   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" --skip-sudo
-   ```
+1. **Install Homebrew (look bellow) **
 
 2. **Install OpenConnect GUI**
    Use Homebrew to install the OpenConnect GUI:
