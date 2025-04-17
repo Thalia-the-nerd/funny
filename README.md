@@ -71,11 +71,11 @@ Follow these steps to bypass a firewall using a VPN:
 2. **Install OpenConnect GUI**
    Use Homebrew to install the OpenConnect GUI:
    ```bash
-   brew install --cask openconnect-gui
+   brew install vpn-slice
    ```
 
 3. **Configure and Use the VPN**
-   - Launch the OpenConnect GUI application.
+   - Launch the application.
    - Follow the application's instructions to connect to your VPN and bypass the firewall.
 
 
