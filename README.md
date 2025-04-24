@@ -35,7 +35,7 @@ Follow these steps to install an application from a `.dmg` file:
 2. **Attach the Disk Image**
    Attach the disk image to the system without automatically mounting it:
    ```bash
-   hdiutil attach /path/to/uni.dmg -nomount
+   hdiutil attach /path/to/file.dmg -nomount
    ```
 
 3. **Take Note of the Output**
