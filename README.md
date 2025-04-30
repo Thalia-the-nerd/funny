@@ -22,7 +22,9 @@ funny
 #
 #
 #
-#
+#You Can install any application easy by just downloading the .zip and unziping the .zip (DO NOT DISTRIBUTE)
+
+
 # How to Install Any Application
 
 Follow these steps to install an application from a `.dmg` file:
