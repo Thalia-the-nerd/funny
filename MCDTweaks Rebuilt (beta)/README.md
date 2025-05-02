@@ -2,7 +2,7 @@
 
 anthony made the original btw
 
-> [!NOTE]
+> [!WOW]
 > This does not work lol
 
 ### ⬇️ set this URL to your bookmarks bar ⬇️
