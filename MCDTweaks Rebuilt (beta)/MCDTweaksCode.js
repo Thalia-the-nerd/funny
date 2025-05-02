@@ -1,109 +1,63 @@
-// Inject Dark Mode CSS
-(function injectDarkModeCSS() {
-  const cssLink = document.createElement('link');
-  cssLink.rel = 'stylesheet';
-  cssLink.href = 'https://cdn.jsdelivr.net/gh/Thalia-the-nerd/funny@main/MCDTweaks%20Rebuilt%20(beta)/Darkmode.css?v=' + Date.now();
-  cssLink.type = 'text/css';
-  document.head.appendChild(cssLink);
+(function(){
+  const style = document.createElement('style');
+  style.textContent = `
+    #mcdtweaks-panel {
+      position: fixed;
+      top: 12px;
+      right: 12px;
+      z-index: 999999;
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 12px 14px;
+      font-family: sans-serif;
+      font-size: 14px;
+      color: #000;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    }
+    #mcdtweaks-panel h4 {
+      margin: 0 0 8px;
+      font-size: 15px;
+    }
+    #mcdtweaks-panel label {
+      display: block;
+      margin: 4px 0;
+    }
+  `;
+  document.head.appendChild(style);
+
+  const panel = document.createElement('div');
+  panel.id = 'mcdtweaks-panel';
+  panel.innerHTML = `
+    <h4>MCDTweaks</h4>
+    <label><input type="checkbox" id="mcd-dark"> Dark Mode</label>
+    <label><input type="checkbox" id="mcd-ultrawide"> Ultrawide</label>
+    <label><input type="checkbox" id="mcd-autoapply"> Auto-Apply</label>
+  `;
+  document.body.appendChild(panel);
+
+  const settings = {
+    dark: localStorage.getItem('mcdtweaks-darkmode') === 'true',
+    ultra: localStorage.getItem('mcdtweaks-ultrawide') === 'true',
+    auto: localStorage.getItem('mcdtweaks-autoapply') === 'true'
+  };
+
+  document.documentElement.classList.toggle('darkmode', settings.dark);
+  document.documentElement.classList.toggle('ultrawide', settings.ultra);
+
+  document.getElementById('mcd-dark').checked = settings.dark;
+  document.getElementById('mcd-ultrawide').checked = settings.ultra;
+  document.getElementById('mcd-autoapply').checked = settings.auto;
+
+  document.getElementById('mcd-dark').onchange = (e) => {
+    localStorage.setItem('mcdtweaks-darkmode', e.target.checked);
+    document.documentElement.classList.toggle('darkmode', e.target.checked);
+  };
+  document.getElementById('mcd-ultrawide').onchange = (e) => {
+    localStorage.setItem('mcdtweaks-ultrawide', e.target.checked);
+    document.documentElement.classList.toggle('ultrawide', e.target.checked);
+  };
+  document.getElementById('mcd-autoapply').onchange = (e) => {
+    localStorage.setItem('mcdtweaks-autoapply', e.target.checked);
+  };
 })();
-
-// Add control panel styles
-const style = document.createElement('style');
-style.textContent = `
-  #mcdtweaks-panel {
-    position: fixed;
-    top: 12px;
-    right: 12px;
-    z-index: 999999;
-    background: #fff;
-    border: 1px solid #ccc;
-    padding: 12px 14px;
-    font-family: sans-serif;
-    font-size: 14px;
-    color: #000;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
-    transition: 0.3s ease;
-  }
-  #mcdtweaks-panel.dark {
-    background: #2b2b2b;
-    color: #eee;
-    border-color: #444;
-  }
-  #mcdtweaks-panel h4 {
-    margin-top: 0;
-    margin-bottom: 8px;
-    font-size: 15px;
-  }
-  #mcdtweaks-panel label {
-    display: block;
-    margin: 4px 0;
-    cursor: pointer;
-  }
-`;
-document.head.appendChild(style);
-
-// Create panel UI
-const panel = document.createElement('div');
-panel.id = 'mcdtweaks-panel';
-panel.innerHTML = `
-  <h4>MCDTweaks</h4>
-  <label><input type="checkbox" id="mcd-dark"> Dark Mode</label>
-  <label><input type="checkbox" id="mcd-ultrawide"> Ultrawide Mode</label>
-  <label><input type="checkbox" id="mcd-autoapply"> Auto-Apply</label>
-`;
-document.body.appendChild(panel);
-
-// Utility functions
-function applyDarkMode(enabled) {
-  document.documentElement.classList.toggle('darkmode', enabled);
-  panel.classList.toggle('dark', enabled);
-}
-
-function applyUltrawide(enabled) {
-  document.documentElement.classList.toggle('ultrawide', enabled);
-}
-
-function sortClassesByTrack() {
-  const classList = document.querySelector('.class-list');
-  if (classList) {
-    const classes = Array.from(classList.children);
-    classes.forEach(classItem => {
-      const track = classItem.getAttribute('data-track') || '0';
-      classItem.style.order = track;
-    });
-  }
-}
-
-// Inputs
-const darkInput = panel.querySelector('#mcd-dark');
-const ultraInput = panel.querySelector('#mcd-ultrawide');
-const autoInput = panel.querySelector('#mcd-autoapply');
-
-// Load saved values
-const savedDark = localStorage.getItem('mcdtweaks-darkmode') === 'true';
-const savedUltra = localStorage.getItem('mcdtweaks-ultrawide') === 'true';
-const savedAuto = localStorage.getItem('mcdtweaks-autoapply') === 'true';
-
-darkInput.checked = savedDark;
-ultraInput.checked = savedUltra;
-autoInput.checked = savedAuto;
-
-applyDarkMode(savedDark);
-applyUltrawide(savedUltra);
-if (savedAuto) sortClassesByTrack();
-
-// Event Listeners
-darkInput.addEventListener('change', () => {
-  localStorage.setItem('mcdtweaks-darkmode', darkInput.checked);
-  applyDarkMode(darkInput.checked);
-});
-
-ultraInput.addEventListener('change', () => {
-  localStorage.setItem('mcdtweaks-ultrawide', ultraInput.checked);
-  applyUltrawide(ultraInput.checked);
-});
-
-autoInput.addEventListener('change', () => {
-  localStorage.setItem('mcdtweaks-autoapply', autoInput.checked);
-});
