@@ -219,3 +219,5 @@ brew doctor
 
 ## installing python without sudo access
 just install like VSC or smth or use homebrew
+
+
