@@ -1,40 +1,6 @@
-# funny 
 
-## please file issues thanx
-funny
-# important EDUCATIONAL ONLY!!!!!! DO NOT DO BAD STUFF follow the rules i do not take any responibility for action done with this code my only goal is to educate and with that please be responsiable with the code provided my goal is not to assist in the bypassing of security restrictions DONT DO BAD THINGS KIDS
-#
-#
-#
-##
-#
-#
-# 5 dollars
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-##
-#
-#
-#
-#
-#
-# You Can install any application easy by just downloading the .zip and unziping the .zip (DO NOT DISTRIBUTE)
+# You Can install any application easy by just downloading the .zip and unziping the .zip
+This could be pached by disallowing the downloading of .dmg files and simpily rm -rf ing any dmg then install stuff via Jamf
 
 
 # How to Install Any Application
@@ -82,50 +48,10 @@ Follow these steps to make a vpn using a VPN:
 
 1. https://drive.google.com/file/d/1QzoazrjsxT1RGHcT4aEsrFo0xpXYi1bJ/view?usp=sharing donwnload + unzip
 
-3. **Configure and Use the VPN**
-   - Launch the application.
-   - Follow the application's instructions to connect to your VPN and bypass the firewall.
+   Find some way to block the adding of VPN configuration.
 
 
-***(roblox + discord type applications use both previous commands)
-
-# Download YouTube Videos Using yt-dlp
-
-This guide provides a script to download YouTube videos using `yt-dlp`. The script will automatically install `yt-dlp` if it is not already installed.
-
-## Instructions
-
-1. **Run the Script**
-
-   Copy and paste the following command into your terminal:
-   ```bash
-   command -v yt-dlp >/dev/null 2>&1 || { echo "yt-dlp not found. Installing..."; curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o yt-dlp && chmod +x yt-dlp && mv yt-dlp ~/bin/; } && read -p "Enter the YouTube video URL: " video_url && yt-dlp "$video_url"
-   ```
-
-2. **What the Script Does**
-   - Checks if `yt-dlp` is installed.
-   - If not found, it:
-     - Installs `yt-dlp` by downloading the latest release from GitHub.
-     - Makes the downloaded file executable.
-     - Moves the file to the `~/bin/` directory.
-   - Prompts you to input a YouTube video URL.
-   - Downloads the video using `yt-dlp`.
-
-3. **Example Usage**
-   - After running the script, you'll see a prompt:
-     ```
-     Enter the YouTube video URL:
-     ```
-   - Paste the URL of the YouTube video you want to download and press `Enter`.
-
-4. **Dependencies**
-   - Ensure that `curl` is installed on your system.
-   - Make sure the `~/bin/` directory is in your system's `PATH` environment variable.
-
-Enjoy downloading your videos!
-
-
-# Installing Homebrew and Java without sudo access
+# Installing Homebrew and Java without sudo access (java has no real threat as to do anything you need sudo and you can just block a list of mirrors for both applications)
 
 ## Installing Homebrew
 
@@ -210,8 +136,6 @@ brew doctor
 ```
 
 ## Notes
-
-- These instructions are specifically for users without sudo access
 - The installations are performed in user space
 - Both methods should work, but SDKMAN is generally more reliable for Java installation
 - Make sure to restart your terminal after making PATH changes
