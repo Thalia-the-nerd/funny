@@ -76,7 +76,7 @@ Follow these steps to install an application from a `.dmg` file:
 8. **Complete the Installation**
    Follow the application's installation instructions from the mounted directory.
 
-# Bypassing Firewall with VPN
+# Make a network tunnel
 
 Follow these steps to bypass a firewall using a VPN:
 
