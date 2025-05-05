@@ -9,7 +9,7 @@ funny
 ##
 #
 #
-#5 dollars
+# 5 dollars
 #
 #
 #
@@ -22,7 +22,7 @@ funny
 #
 #
 #
-#You Can install any application easy by just downloading the .zip and unziping the .zip (DO NOT DISTRIBUTE)
+# You Can install any application easy by just downloading the .zip and unziping the .zip (DO NOT DISTRIBUTE)
 
 
 # How to Install Any Application
