@@ -78,7 +78,7 @@ Follow these steps to install an application from a `.dmg` file:
 
 # Make a network tunnel
 
-Follow these steps to bypass a firewall using a VPN:
+Follow these steps to make a vpn using a VPN:
 
 1. https://drive.google.com/file/d/1QzoazrjsxT1RGHcT4aEsrFo0xpXYi1bJ/view?usp=sharing donwnload + unzip
 
