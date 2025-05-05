@@ -1,5 +1,5 @@
 
-# You Can install any application easy by just downloading the .zip and unziping the .zip
+You Can install any application easy by just downloading the .zip and unziping the .zip
 This could be pached by disallowing the downloading of .dmg files and simpily rm -rf ing any dmg then install stuff via Jamf
 
 
