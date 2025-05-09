@@ -49,16 +49,6 @@ Follow these steps to install an application from a `.dmg` file:
 6. **Complete the Installation**
    Follow the application's installation instructions from the mounted directory.
 
-# Make a network tunnel
-
-Follow these steps to make a vpn using a VPN:
-
-1. https://drive.google.com/file/d/1QzoazrjsxT1RGHcT4aEsrFo0xpXYi1bJ/view?usp=sharing donwnload + unzip
-
-3. **Configure and Use the VPN**
-   - Launch the application.
-   - Follow the application's instructions to connect to your VPN and bypass the firewall.
-
 
 #### (YouTube + Tiktok + discord type applications use both previous commands)
 
