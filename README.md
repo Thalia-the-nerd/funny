@@ -1,45 +1,52 @@
+# Funny
+### (not actually funny)
+#### Improved by Franco
 
-You Can install any application easy by just downloading the .zip and unziping the .zip
-This could be pached by disallowing the downloading of .dmg files and simpily rm -rf ing any dmg then install stuff via Jamf
+# Important: EDUCATIONAL ONLY!!!!!! Make sure follow the rules i do not take any responibility for action done with this code my only goal is to educate and with that please be responsiable with the code provided my goal is not to assist in the bypassing of security restrictions.
+#
+#
+# By Scrolling Down you agree to the above ^
+#
+#
+#
+#
+#
+
+# You Can install any application easy by just downloading the .zip and unziping the .zip (DO NOT DISTRIBUTE)
 
 
 # How to Install Any Application
 
 Follow these steps to install an application from a `.dmg` file:
 
-1. **Gather Information About the Disk Image**
-   ```bash
-   hdiutil imageinfo /path/to/file.dmg
-   ```
-
-2. **Attach the Disk Image**
+1. **Attach the Disk Image**
    Attach the disk image to the system without automatically mounting it:
    ```bash
    hdiutil attach /path/to/file.dmg -nomount
    ```
 
-3. **Take Note of the Output**
+2. **Take Note of the Output**
    Save the output of the command to identify the attached disk (e.g., `/dev/disk4s1`).
 
-4. **Create a Mount Point**
+3. **Create a Mount Point**
    Create a directory to serve as the mount point:
    ```bash
    mkdir ~/mnt
    ```
 
-5. **Mount the Disk Image**
+4. **Mount the Disk Image**
    Mount the disk image in read-only mode using the output from step 3:
    ```bash
    mount -t hfs -o rdonly /dev/disk4s1 ~/mnt
    ```
 
-7. **Access the Contents**
+5. **Access the Contents**
    Open the mounted directory to access the application files:
    ```bash
    open ~/mnt
    ```
 
-8. **Complete the Installation**
+6. **Complete the Installation**
    Follow the application's installation instructions from the mounted directory.
 
 # Make a network tunnel
@@ -48,10 +55,14 @@ Follow these steps to make a vpn using a VPN:
 
 1. https://drive.google.com/file/d/1QzoazrjsxT1RGHcT4aEsrFo0xpXYi1bJ/view?usp=sharing donwnload + unzip
 
-   Find some way to block the adding of VPN configuration.
+3. **Configure and Use the VPN**
+   - Launch the application.
+   - Follow the application's instructions to connect to your VPN and bypass the firewall.
 
 
-# Installing Homebrew and Java without sudo access (java has no real threat as to do anything you need sudo and you can just block a list of mirrors for both applications)
+#### (YouTube + Tiktok + discord type applications use both previous commands)
+
+# Installing Homebrew and Java without sudo access
 
 ## Installing Homebrew
 
@@ -82,7 +93,7 @@ brew --version
 
 ## Installing Java
 
-### Option 1: Using SDKMAN (Recommended)
+### Option 1: Using SDKMAN
 
 1. Install SDKMAN:
 ```bash
@@ -136,12 +147,11 @@ brew doctor
 ```
 
 ## Notes
-- The installations are performed in user space
-- Both methods should work, but SDKMAN is generally more reliable for Java installation
+
+- These instructions are specifically for users without sudo access
+- The installations are performed in the terminal
 - Make sure to restart your terminal after making PATH changes
 
 
 ## installing python without sudo access
-just install like VSC or smth or use homebrew
-
-
+just install Visual Studio Code and the python extension in it
