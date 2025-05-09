@@ -32,3 +32,5 @@ LOG ENTRIES
 2025-05-09 12:39:17,307 - INFO - {"timestamp": "2025-05-09T12:39:17.307563", "computer_id": "Loaner-1458.local-root", "operation": "menu_choice", "status": "success", "details": {"choice": "0"}}
 2025-05-09 12:39:18,316 - INFO - Successfully uploaded log file: Loaner-1458.local-root.log
 2025-05-09 12:39:19,698 - INFO - {"timestamp": "2025-05-09T12:39:19.698591", "computer_id": "Loaner-1458.local-root", "operation": "menu_choice", "status": "success", "details": {"choice": "exit"}}
+2025-05-09 12:39:20,795 - INFO - Successfully uploaded log file: Loaner-1458.local-root.log
+2025-05-09 12:39:20,798 - INFO - {"timestamp": "2025-05-09T12:39:20.798900", "computer_id": "Loaner-1458.local-root", "operation": "program_exit", "status": "success", "details": null}
