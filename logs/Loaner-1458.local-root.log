@@ -1,0 +1,30 @@
+================================================================================
+SYSTEM INFORMATION
+================================================================================
+Computer ID: Loaner-1458.local-root
+Timestamp: 2025-05-09T12:30:29.768332
+OS: Darwin 14.6.1
+Architecture: x86_64
+CPU: i386 (8 cores)
+CPU Usage: 43.6%
+RAM:
+  Total: 16.0 GB
+  Used: 8.77 GB
+  Free: 6.95 GB
+  Usage: 56.6%
+Disk:
+  Total: 233.47 GB
+  Used: 12.28 GB
+  Free: 159.93 GB
+  Usage: 7.1%
+Network:
+  Connected: True
+  Download Speed: 0.29s
+  GitHub Connected: True
+Battery:
+  Level: 24%
+  Power Plugged: True
+================================================================================
+LOG ENTRIES
+================================================================================
+2025-05-09 12:30:30,849 - INFO - {"timestamp": "2025-05-09T12:30:30.849828", "computer_id": "Loaner-1458.local-root", "operation": "program_start", "status": "success", "details": {"version": "1.0", "computer_info": {"OS": "Darwin", "OS Version": "14.6.1", "Architecture": "x86_64", "CPU": "i386", "CPU Cores": 8, "CPU Usage": "31.1%", "RAM": {"Total": "16.0 GB", "Used": "8.77 GB", "Free": "6.94 GB", "Usage": "56.6%"}, "Disk": {"Total": "233.47 GB", "Used": "12.28 GB", "Free": "159.93 GB", "Usage": "7.1%"}, "Network": {"connected": true, "download_time": 0.24, "github_connected": true}, "Battery": {"percent": "24%", "power_plugged": true}}}}
