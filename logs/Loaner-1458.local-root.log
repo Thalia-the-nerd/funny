@@ -32,3 +32,5 @@ LOG ENTRIES
 2025-05-09 12:38:04,596 - INFO - {"timestamp": "2025-05-09T12:38:04.596427", "computer_id": "Loaner-1458.local-root", "operation": "menu_choice", "status": "success", "details": {"choice": "/usr/bin/python3 \"/users/awebb29/desktop/python final/funner.py\""}}
 2025-05-09 12:38:05,839 - INFO - Successfully uploaded log file: Loaner-1458.local-root.log
 2025-05-09 12:38:08,365 - INFO - {"timestamp": "2025-05-09T12:38:08.365335", "computer_id": "Loaner-1458.local-root", "operation": "menu_choice", "status": "success", "details": {"choice": "/usr/bin/python3 \"/users/awebb29/desktop/python final/funner.py\""}}
+2025-05-09 12:38:09,667 - INFO - Successfully uploaded log file: Loaner-1458.local-root.log
+2025-05-09 12:38:12,055 - INFO - {"timestamp": "2025-05-09T12:38:12.054978", "computer_id": "Loaner-1458.local-root", "operation": "menu_choice", "status": "success", "details": {"choice": "exit"}}
