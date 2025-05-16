@@ -1,6 +1,4 @@
 # Funny
-### (not actually funny)
-#### Improved by Franco
 
 # Important: EDUCATIONAL ONLY!!!!!! Make sure follow the rules i do not take any responibility for action done with this code my only goal is to educate and with that please be responsiable with the code provided my goal is not to assist in the bypassing of security restrictions.
 #
@@ -17,40 +15,42 @@
 
 # How to Install Any Application
 
-Follow these steps to install an application from a `.dmg` file:
+# Mounting a DMG File on macOS (Manual Mount)
 
-1. **Attach the Disk Image**
-   Attach the disk image to the system without automatically mounting it:
-   ```bash
-   hdiutil attach /path/to/file.dmg -nomount
-   ```
+Follow these steps to manually mount a DMG file in read-only mode on macOS.
 
-2. **Take Note of the Output**
-   Save the output of the command to identify the attached disk (e.g., `/dev/disk4s1`).
+## 1. Attach the Disk Image (without mounting)
 
-3. **Create a Mount Point**
-   Create a directory to serve as the mount point:
-   ```bash
-   mkdir ~/mnt
-   ```
+```sh
+hdiutil attach ~/Downloads/funnyA.dmg -nomount
+```
+- Note the output device node (e.g., `/dev/disk3s1`).
 
-4. **Mount the Disk Image**
-   Mount the disk image in read-only mode using the output from step 3:
-   ```bash
-   mount -t hfs -o rdonly /dev/disk4s1 ~/mnt
-   ```
+## 2. Create a Mount Point
 
-5. **Access the Contents**
-   Open the mounted directory to access the application files:
-   ```bash
-   open ~/mnt
-   ```
+```sh
+if [ -d "$HOME/mnt" ]; then
+  echo "you did this already :3 go to the next step."
+else
+  mkdir "$HOME/mnt"
+fi
+```
 
-6. **Complete the Installation**
-   Follow the application's installation instructions from the mounted directory.
+## 3. Mount the Disk Image (Read-Only)
 
+```sh
+mount -t apfs -o rdonly /dev/disk3s1 ~/mnt
+```
+- Replace `/dev/disk3s1` with the device node from step 1 if different.
 
-#### (YouTube + Tiktok + discord type applications use both previous commands)
+## 4. Verify the Mount
+
+```sh
+ls -l ~/mnt
+```
+
+You should now see the contents of the DMG mounted on the desktop.
+
 
 # Installing Homebrew and Java without sudo access
 
