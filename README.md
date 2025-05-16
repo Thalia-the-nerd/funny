@@ -43,12 +43,6 @@ mount -t apfs -o rdonly /dev/disk3s1 ~/mnt
 ```
 - Replace `/dev/disk3s1` with the device node from step 1 if different.
 
-## 4. Verify the Mount
-
-```sh
-ls -l ~/mnt
-```
-
 You should now see the contents of the DMG mounted on the desktop.
 
 
