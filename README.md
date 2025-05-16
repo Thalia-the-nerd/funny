@@ -10,12 +10,11 @@
 #
 #
 
-# You Can install any application easy by just downloading the .zip and unziping the .zip (DO NOT DISTRIBUTE)
 
 
 # How to Install Any Application
 
-# Mounting a DMG File on macOS (Manual Mount)
+## You Can install any application easy by just downloading the .zip and unziping the .zip (DO NOT DISTRIBUTE)
 
 Follow these steps to manually mount a DMG file in read-only mode on macOS.
 
