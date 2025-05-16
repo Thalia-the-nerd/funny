@@ -48,32 +48,44 @@ You should now see the contents of the DMG mounted on the desktop.
 
 # Installing Homebrew and Java without sudo access
 
-## Installing Homebrew
+# Homebrew Installation (User Directory)
 
-1. Create a directory for Homebrew in your home folder:
-```bash
-mkdir -p $HOME/.homebrew
-```
+Follow these steps to install Homebrew in your home directory (no sudo required):
 
-2. Download and extract Homebrew:
-```bash
-curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C $HOME/.homebrew
-```
+1. **Create a directory for Homebrew:**
+   ```sh
+   mkdir -p $HOME/.homebrew
+   ```
 
-3. Add Homebrew to your PATH by adding this line to your `~/.zshrc`:
-```bash
-echo 'eval "$($HOME/.homebrew/bin/brew shellenv)"' >> ~/.zshrc
-```
+2. **Download and extract Homebrew:**
+   ```sh
+   curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C $HOME/.homebrew
+   ```
 
-4. Reload your shell configuration:
-```bash
-source ~/.zshrc
-```
+3. **Add Homebrew to your PATH:**
+   ```sh
+   echo 'eval "$($HOME/.homebrew/bin/brew shellenv)"' >> ~/.zshrc
+   ```
 
-5. Verify Homebrew installation:
-```bash
-brew --version
-```
+4. **Reload your shell configuration:**
+   ```sh
+   source ~/.zshrc
+   ```
+
+5. **Verify Homebrew installation:**
+   ```sh
+   brew --version
+   ```
+
+---
+
+**Note:**
+- If you see `dirty` in the version (e.g., `Homebrew 4.5.2-dirty`), it means you installed from the latest master branch, not a tagged release. This is normal and does not affect functionality.
+- For a clean version string, use the official install script:
+  ```sh
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  ```
+
 
 ## Installing Java
 
